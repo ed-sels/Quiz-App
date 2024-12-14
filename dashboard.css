@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Light & Dark Mode */
+  body.light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #f9f9f9;
+  }
+  
+  .dark-mode .stat-card {
+    background-color: #1f1f1f;
+    color: #f9f9f9;
+  }
+  
+  .dark-mode table {
+    background-color: #1f1f1f;
+    color: #f9f9f9;
+  }
+  
+  /* Header */
+  .dashboard-header {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  #theme-toggle {
+    background-color: #fff;
+    color: #6c63ff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #theme-toggle:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    background-color: #fff;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .stat-card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .stat-card p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Recent Activity */
+  .recent-activity {
+    margin-bottom: 2rem;
+  }
+  
+  .recent-activity h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+  }
+  
+  table th {
+    background-color: #6c63ff;
+    color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+  
+  table tr:hover {
+    background-color: #e8e8e8;
+  }
+  
+  /* Footer */
+  .dashboard-footer {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .dashboard-footer p {
+    font-size: 0.9rem;
+  }
+  
