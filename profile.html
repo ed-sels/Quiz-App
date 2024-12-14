@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body class="light-mode">
+  <header class="profile-header">
+    <div class="container">
+      <h1>User Profile</h1>
+      <button id="theme-toggle">Switch to Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="profile-main">
+    <div class="container">
+      <section class="user-info">
+        <div class="avatar-container">
+          <img id="avatar" src="default-avatar.jpg" alt="User Avatar" class="avatar">
+          <div class="avatar-actions">
+            <input type="file" id="upload-avatar" accept="image/*" hidden>
+            <button id="upload-btn">Upload Picture</button>
+            <button id="remove-btn">Remove Picture</button>
+          </div>
+        </div>
+        <div class="user-details">
+          <h2>John Doe</h2>
+          <p>Email: johndoe@example.com</p>
+          <p>Location: New York, USA</p>
+        </div>
+      </section>
+
+      <section class="user-stats">
+        <h2>Profile Stats</h2>
+        <div class="stat-card">
+          <h3>Total Quizzes Taken</h3>
+          <p>25</p>
+        </div>
+        <div class="stat-card">
+          <h3>Highest Score</h3>
+          <p>95%</p>
+        </div>
+        <div class="stat-card">
+          <h3>Average Score</h3>
+          <p>85%</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="profile-footer">
+    <div class="container">
+      <p>&copy; 2024 Trivia Titans. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

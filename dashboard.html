@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="light-mode">
+  <header class="dashboard-header">
+    <div class="container">
+      <h1>Quiz Dashboard</h1>
+      <button id="theme-toggle">Switch to Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="container">
+      <section class="stats">
+        <div class="stat-card">
+          <h2>Total Quizzes</h2>
+          <p>15</p>
+        </div>
+        <div class="stat-card">
+          <h2>Overall Score</h2>
+          <p>1200</p>
+        </div>
+        <div class="stat-card">
+          <h2>Rank</h2>
+          <p>#45</p>
+        </div>
+        <div class="stat-card">
+          <h2>Average Score</h2>
+          <p>80%</p>
+        </div>
+      </section>
+
+      <section class="recent-activity">
+        <h2>Recent Quiz Results</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Quiz Name</th>
+              <th>Score</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>General Knowledge</td>
+              <td>85%</td>
+              <td>Dec 13, 2024</td>
+            </tr>
+            <tr>
+              <td>Science Trivia</td>
+              <td>78%</td>
+              <td>Dec 12, 2024</td>
+            </tr>
+            <tr>
+              <td>History Buffs</td>
+              <td>92%</td>
+              <td>Dec 10, 2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <footer class="dashboard-footer">
+    <div class="container">
+      <p>&copy; 2024 Trivia Titans. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
