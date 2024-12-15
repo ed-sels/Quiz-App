@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Profile - Quiz App{% endblock %}
+
+{% block header %}User Profile{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="user-info">
+        <div class="avatar-container">
+            <img id="avatar" src="{{ avatar_path }}" alt="User Avatar" class="avatar">
+            <div class="avatar-actions">
+                <form action="/profile" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="upload-avatar" id="upload-avatar" accept="image/*" hidden>
+                    <button type="button" id="upload-btn">Upload Picture</button>
+                    <button type="submit" name="remove-avatar" id="remove-btn">Remove Picture</button>
+                </form>
+            </div>
+        </div>
+        <div class="user-details">
+            <h2>John Doe</h2>
+            <p>Email: johndoe@example.com</p>
+            <p>Location: New York, USA</p>
+        </div>
+    </section>
+
+    <section class="user-stats">
+        <h2>Profile Stats</h2>
+        <div class="stat-card">
+            <h3>Total Quizzes Taken</h3>
+            <p>25</p>
+        </div>
+        <div class="stat-card">
+            <h3>Highest Score</h3>
+            <p>95%</p>
+        </div>
+        <div class="stat-card">
+            <h3>Average Score</h3>
+            <p>85%</p>
+        </div>
+    </section>
+</div>
+{% endblock %}
