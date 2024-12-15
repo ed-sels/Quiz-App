@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Titans - Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Trivia Titans</h1>
+    <p>Your Results</p>
+  </header>
+  <main>
+    <h2>Your Score: {{ score }}%</h2>
+    <ul>
+      {% for i in range(questions|length) %}
+      <li>
+        <strong>Question {{ i + 1 }}:</strong> {{ questions[i].text }}<br>
+        <strong>Your Answer:</strong> {{ user_answers[i] if i < user_answers|length else "No answer" }}<br>
+        <strong>Correct Answer:</strong> {{ questions[i].answer }}
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="{{ url_for('restart') }}" class="btn">Restart Quiz</a>
+  </main>
+  <footer>
+    <p>&copy; 2024 Trivia Titans. All rights reserved.</p>
+  </footer>
+</body>
+</html>
